@@ -1,0 +1,95 @@
+/* Home Page Styles */
+.home-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #db9884;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .home-page h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 40px;
+  }
+  
+  .button-container {
+    display: flex;
+    gap: 20px;               /* Proper gap between buttons */
+    justify-content: center; /* Center the buttons horizontally */
+    align-items: center;     /* Center the buttons vertically */
+    flex-wrap: wrap;         /* Allow wrapping if screen is smaller */
+    margin: 0 auto;          /* Center the button container */
+  }
+  
+  .home-button {
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+    width: 200px;
+    text-align: center;
+  }
+  
+  /* Button Colors */
+  .profile-button {
+    background-color: #d43317;
+    color: white;
+  }
+  
+  .post-job-button {
+    background-color: #FF9800;
+    color: white;
+  }
+  
+  .job-listings-button {
+    background-color: #2196F3;
+    color: white;
+  }
+  
+  /* New Blue Buttons */
+  .blue-button {
+    background-color: #2196F3; /* Initial Blue */
+    color: white;
+  }
+  
+  .blue-button:hover {
+    background-color: #f44336; /* Red on hover */
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Button Hover Effect */
+  .home-button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .home-page h1 {
+      font-size: 2rem; /* Adjust heading size */
+    }
+  
+    .button-container {
+      flex-direction: column; /* Stack buttons vertically */
+      gap: 15px;              /* Smaller gap for mobile screens */
+    }
+  
+    .home-button {
+      width: 100%; /* Full width for buttons on mobile */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .home-page h1 {
+      font-size: 1.8rem;
+    }
+  }
+  

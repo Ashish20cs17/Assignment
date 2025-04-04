@@ -1,0 +1,94 @@
+/* Job Listings Page Styles */
+.job-listings-page {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: rgb(211, 146, 146);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.job-listings-page h1 {
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #f4f4f4;
+  margin-bottom: 20px;
+}
+
+.job-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.job-card {
+  padding: 15px;
+  background-color: #fffdfd;
+  border: 1px solid #e69a9a;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.job-card:hover {
+  transform: translateY(-5px); /* Slight lift effect on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* More pronounced shadow */
+}
+
+.job-card h3 {
+  margin-top: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.job-card p {
+  margin: 5px 0;
+  color: #555;
+}
+
+.job-card .job-meta {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.job-card .job-meta p {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.job-card .salary {
+  font-weight: bold;
+  color: #4CAF50; /* Green color for salary */
+}
+
+/* Search Bar and Filter Styles */
+.search-container {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.search-bar {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 300px;
+}
+
+.filters-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.filter-dropdown {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
